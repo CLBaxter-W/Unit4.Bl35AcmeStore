@@ -96,7 +96,7 @@ const fetchUserProducts = async ({ id }) => {
 
   const response = await client.query(SQL, [id]);
 
-  return response.rows[0];
+  return response.rows;
 };
 
 const destroyUserProduct = async ({ user_product_id, user_id }) => {
